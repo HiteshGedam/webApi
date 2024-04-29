@@ -1,0 +1,15 @@
+2024-04-23 16:17:22.185 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7052/api/Student/Create - application/json-patch+json 105
+2024-04-23 16:17:22.196 +05:30 [INF] Executing endpoint 'WebApiApp.Controllers.StudentController.CreateStudets (WebApiApp)'
+2024-04-23 16:17:22.198 +05:30 [INF] Route matched with {action = "CreateStudets", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[WebApiApp.Models.StudentDTO] CreateStudets(WebApiApp.Models.StudentDTO) on controller WebApiApp.Controllers.StudentController (WebApiApp).
+2024-04-23 16:17:22.242 +05:30 [INF] Executing action method WebApiApp.Controllers.StudentController.CreateStudets (WebApiApp) - Validation state: "Valid"
+2024-04-23 16:17:22.270 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 500), @p1='?' (DbType = DateTime2), @p2='?' (Size = 250), @p3='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [students] ([Address], [DOB], [Email], [Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2024-04-23 16:17:22.280 +05:30 [INF] Executed action method WebApiApp.Controllers.StudentController.CreateStudets (WebApiApp), returned result Microsoft.AspNetCore.Mvc.CreatedAtRouteResult in 37.1841ms.
+2024-04-23 16:17:22.282 +05:30 [WRN] No output formatter was found for content types '["text/plain"]' to write the response.
+2024-04-23 16:17:22.282 +05:30 [INF] Executed action WebApiApp.Controllers.StudentController.CreateStudets (WebApiApp) in 84.4231ms
+2024-04-23 16:17:22.282 +05:30 [INF] Executed endpoint 'WebApiApp.Controllers.StudentController.CreateStudets (WebApiApp)'
+2024-04-23 16:17:22.282 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7052/api/Student/Create - 406 0 null 100.2948ms

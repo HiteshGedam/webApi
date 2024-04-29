@@ -1,0 +1,38 @@
+2024-04-23 16:15:15.705 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/api/Student/ALL - null null
+2024-04-23 16:15:15.715 +05:30 [INF] Executing endpoint 'WebApiApp.Controllers.StudentController.GetStudent (WebApiApp)'
+2024-04-23 16:15:15.715 +05:30 [INF] Route matched with {action = "GetStudent", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[WebApiApp.Models.StudentDTO]] GetStudent() on controller WebApiApp.Controllers.StudentController (WebApiApp).
+2024-04-23 16:15:15.737 +05:30 [INF] Executing action method WebApiApp.Controllers.StudentController.GetStudent (WebApiApp) - Validation state: "Valid"
+2024-04-23 16:15:18.705 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Name], [s].[Email], [s].[Address], [s].[DOB]
+FROM [students] AS [s]
+2024-04-23 16:15:18.706 +05:30 [INF] Executed action method WebApiApp.Controllers.StudentController.GetStudent (WebApiApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2969.3262ms.
+2024-04-23 16:15:18.709 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebApiApp.Models.StudentDTO, WebApiApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-23 16:15:18.786 +05:30 [INF] Executed action WebApiApp.Controllers.StudentController.GetStudent (WebApiApp) in 3071.1034ms
+2024-04-23 16:15:18.786 +05:30 [INF] Executed endpoint 'WebApiApp.Controllers.StudentController.GetStudent (WebApiApp)'
+2024-04-23 16:15:18.786 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/api/Student/ALL - 200 192 application/json; charset=utf-8 3082.3996ms
+2024-04-23 16:15:43.650 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/api/Student/2 - null null
+2024-04-23 16:15:43.662 +05:30 [INF] Executing endpoint 'WebApiApp.Controllers.StudentController.GetStudentById (WebApiApp)'
+2024-04-23 16:15:43.669 +05:30 [INF] Route matched with {action = "GetStudentById", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[WebApiApp.Models.StudentDTO] GetStudentById(Int32) on controller WebApiApp.Controllers.StudentController (WebApiApp).
+2024-04-23 16:15:43.692 +05:30 [INF] Executing action method WebApiApp.Controllers.StudentController.GetStudentById (WebApiApp) - Validation state: "Valid"
+2024-04-23 16:15:43.795 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Address], [s].[DOB], [s].[Email], [s].[Name]
+FROM [students] AS [s]
+WHERE [s].[Id] = @__id_0
+2024-04-23 16:15:43.819 +05:30 [INF] Executed action method WebApiApp.Controllers.StudentController.GetStudentById (WebApiApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 127.0675ms.
+2024-04-23 16:15:43.820 +05:30 [INF] Executing OkObjectResult, writing value of type 'WebApiApp.Models.StudentDTO'.
+2024-04-23 16:15:43.820 +05:30 [INF] Executed action WebApiApp.Controllers.StudentController.GetStudentById (WebApiApp) in 150.3978ms
+2024-04-23 16:15:43.820 +05:30 [INF] Executed endpoint 'WebApiApp.Controllers.StudentController.GetStudentById (WebApiApp)'
+2024-04-23 16:15:43.820 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/api/Student/2 - 200 96 application/json; charset=utf-8 170.5284ms
+2024-04-23 16:15:50.014 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/api/Student/2 - null null
+2024-04-23 16:15:50.015 +05:30 [INF] Executing endpoint 'WebApiApp.Controllers.StudentController.GetStudentById (WebApiApp)'
+2024-04-23 16:15:50.015 +05:30 [INF] Route matched with {action = "GetStudentById", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[WebApiApp.Models.StudentDTO] GetStudentById(Int32) on controller WebApiApp.Controllers.StudentController (WebApiApp).
+2024-04-23 16:15:50.033 +05:30 [INF] Executing action method WebApiApp.Controllers.StudentController.GetStudentById (WebApiApp) - Validation state: "Valid"
+2024-04-23 16:15:50.037 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Address], [s].[DOB], [s].[Email], [s].[Name]
+FROM [students] AS [s]
+WHERE [s].[Id] = @__id_0
+2024-04-23 16:15:50.038 +05:30 [INF] Executed action method WebApiApp.Controllers.StudentController.GetStudentById (WebApiApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.5008ms.
+2024-04-23 16:15:50.038 +05:30 [INF] Executing OkObjectResult, writing value of type 'WebApiApp.Models.StudentDTO'.
+2024-04-23 16:15:50.055 +05:30 [INF] Executed action WebApiApp.Controllers.StudentController.GetStudentById (WebApiApp) in 40.0349ms
+2024-04-23 16:15:50.055 +05:30 [INF] Executed endpoint 'WebApiApp.Controllers.StudentController.GetStudentById (WebApiApp)'
+2024-04-23 16:15:50.055 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/api/Student/2 - 200 255 application/xml; charset=utf-8 40.8393ms

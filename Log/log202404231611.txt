@@ -1,0 +1,25 @@
+2024-04-23 16:11:20.370 +05:30 [INF] Now listening on: https://localhost:7052
+2024-04-23 16:11:20.395 +05:30 [INF] Now listening on: http://localhost:5220
+2024-04-23 16:11:20.399 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-23 16:11:20.400 +05:30 [INF] Hosting environment: Development
+2024-04-23 16:11:20.401 +05:30 [INF] Content root path: F:\PRJ\WebApiApp
+2024-04-23 16:11:23.169 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/swagger/index.html - null null
+2024-04-23 16:11:23.399 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/swagger/index.html - 200 null text/html;charset=utf-8 234.4864ms
+2024-04-23 16:11:23.442 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/_vs/browserLink - null null
+2024-04-23 16:11:23.442 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-23 16:11:23.453 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 10.9762ms
+2024-04-23 16:11:23.491 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/_vs/browserLink - 200 null text/javascript; charset=UTF-8 49.1259ms
+2024-04-23 16:11:23.683 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/swagger/v1/swagger.json - null null
+2024-04-23 16:11:23.828 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 145.4859ms
+2024-04-23 16:11:31.032 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/api/Student/ALL - null null
+2024-04-23 16:11:31.047 +05:30 [INF] Executing endpoint 'WebApiApp.Controllers.StudentController.GetStudent (WebApiApp)'
+2024-04-23 16:11:31.062 +05:30 [INF] Route matched with {action = "GetStudent", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[WebApiApp.Models.StudentDTO]] GetStudent() on controller WebApiApp.Controllers.StudentController (WebApiApp).
+2024-04-23 16:11:31.237 +05:30 [INF] Executing action method WebApiApp.Controllers.StudentController.GetStudent (WebApiApp) - Validation state: "Valid"
+2024-04-23 16:11:35.721 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Name], [s].[Email], [s].[Address], [s].[DOB]
+FROM [students] AS [s]
+2024-04-23 16:11:58.711 +05:30 [INF] Executed action method WebApiApp.Controllers.StudentController.GetStudent (WebApiApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 27477.3809ms.
+2024-04-23 16:11:58.724 +05:30 [WRN] No output formatter was found for content types '["text/plain"]' to write the response.
+2024-04-23 16:11:58.727 +05:30 [INF] Executed action WebApiApp.Controllers.StudentController.GetStudent (WebApiApp) in 27670.5912ms
+2024-04-23 16:11:58.727 +05:30 [INF] Executed endpoint 'WebApiApp.Controllers.StudentController.GetStudent (WebApiApp)'
+2024-04-23 16:11:58.735 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/api/Student/ALL - 406 0 null 27710.9274ms

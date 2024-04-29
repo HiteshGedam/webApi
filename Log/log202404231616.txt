@@ -1,0 +1,58 @@
+2024-04-23 16:16:08.633 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7052/api/Student/2 - null null
+2024-04-23 16:16:08.635 +05:30 [INF] Executing endpoint 'WebApiApp.Controllers.StudentController.DeletStudent (WebApiApp)'
+2024-04-23 16:16:08.637 +05:30 [INF] Route matched with {action = "DeletStudent", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Boolean] DeletStudent(Int32) on controller WebApiApp.Controllers.StudentController (WebApiApp).
+2024-04-23 16:16:08.655 +05:30 [INF] Executing action method WebApiApp.Controllers.StudentController.DeletStudent (WebApiApp) - Validation state: "Valid"
+2024-04-23 16:16:08.660 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Address], [s].[DOB], [s].[Email], [s].[Name]
+FROM [students] AS [s]
+WHERE [s].[Id] = @__id_0
+2024-04-23 16:16:08.721 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [students]
+OUTPUT 1
+WHERE [Id] = @p0;
+2024-04-23 16:16:08.727 +05:30 [INF] Executed action method WebApiApp.Controllers.StudentController.DeletStudent (WebApiApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 72.3786ms.
+2024-04-23 16:16:08.730 +05:30 [WRN] No output formatter was found for content types '["text/plain"]' to write the response.
+2024-04-23 16:16:08.730 +05:30 [INF] Executed action WebApiApp.Controllers.StudentController.DeletStudent (WebApiApp) in 92.8825ms
+2024-04-23 16:16:08.730 +05:30 [INF] Executed endpoint 'WebApiApp.Controllers.StudentController.DeletStudent (WebApiApp)'
+2024-04-23 16:16:08.730 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7052/api/Student/2 - 406 0 null 97.4735ms
+2024-04-23 16:16:27.218 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/api/Student/test - null null
+2024-04-23 16:16:27.219 +05:30 [INF] Executing endpoint 'WebApiApp.Controllers.StudentController.GetStudentByName (WebApiApp)'
+2024-04-23 16:16:27.221 +05:30 [INF] Route matched with {action = "GetStudentByName", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[WebApiApp.Models.StudentDTO] GetStudentByName(System.String) on controller WebApiApp.Controllers.StudentController (WebApiApp).
+2024-04-23 16:16:27.252 +05:30 [INF] Executing action method WebApiApp.Controllers.StudentController.GetStudentByName (WebApiApp) - Validation state: "Valid"
+2024-04-23 16:16:27.265 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__name_0='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Address], [s].[DOB], [s].[Email], [s].[Name]
+FROM [students] AS [s]
+WHERE [s].[Name] = @__name_0
+2024-04-23 16:16:27.266 +05:30 [INF] Executed action method WebApiApp.Controllers.StudentController.GetStudentByName (WebApiApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 13.3711ms.
+2024-04-23 16:16:27.268 +05:30 [WRN] No output formatter was found for content types '["text/plain"]' to write the response.
+2024-04-23 16:16:27.268 +05:30 [INF] Executed action WebApiApp.Controllers.StudentController.GetStudentByName (WebApiApp) in 47.0533ms
+2024-04-23 16:16:27.268 +05:30 [INF] Executed endpoint 'WebApiApp.Controllers.StudentController.GetStudentByName (WebApiApp)'
+2024-04-23 16:16:27.268 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/api/Student/test - 406 0 null 49.9386ms
+2024-04-23 16:16:33.994 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/api/Student/Test - null null
+2024-04-23 16:16:33.995 +05:30 [INF] Executing endpoint 'WebApiApp.Controllers.StudentController.GetStudentByName (WebApiApp)'
+2024-04-23 16:16:33.995 +05:30 [INF] Route matched with {action = "GetStudentByName", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[WebApiApp.Models.StudentDTO] GetStudentByName(System.String) on controller WebApiApp.Controllers.StudentController (WebApiApp).
+2024-04-23 16:16:34.019 +05:30 [INF] Executing action method WebApiApp.Controllers.StudentController.GetStudentByName (WebApiApp) - Validation state: "Valid"
+2024-04-23 16:16:34.023 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__name_0='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Address], [s].[DOB], [s].[Email], [s].[Name]
+FROM [students] AS [s]
+WHERE [s].[Name] = @__name_0
+2024-04-23 16:16:34.023 +05:30 [INF] Executed action method WebApiApp.Controllers.StudentController.GetStudentByName (WebApiApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.1314ms.
+2024-04-23 16:16:34.025 +05:30 [WRN] No output formatter was found for content types '["text/plain"]' to write the response.
+2024-04-23 16:16:34.025 +05:30 [INF] Executed action WebApiApp.Controllers.StudentController.GetStudentByName (WebApiApp) in 30.444ms
+2024-04-23 16:16:34.026 +05:30 [INF] Executed endpoint 'WebApiApp.Controllers.StudentController.GetStudentByName (WebApiApp)'
+2024-04-23 16:16:34.026 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/api/Student/Test - 406 0 null 31.179ms
+2024-04-23 16:16:43.463 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/api/Student/Test - null null
+2024-04-23 16:16:43.463 +05:30 [INF] Executing endpoint 'WebApiApp.Controllers.StudentController.GetStudentByName (WebApiApp)'
+2024-04-23 16:16:43.463 +05:30 [INF] Route matched with {action = "GetStudentByName", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[WebApiApp.Models.StudentDTO] GetStudentByName(System.String) on controller WebApiApp.Controllers.StudentController (WebApiApp).
+2024-04-23 16:16:43.493 +05:30 [INF] Executing action method WebApiApp.Controllers.StudentController.GetStudentByName (WebApiApp) - Validation state: "Valid"
+2024-04-23 16:16:43.497 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__name_0='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Address], [s].[DOB], [s].[Email], [s].[Name]
+FROM [students] AS [s]
+WHERE [s].[Name] = @__name_0
+2024-04-23 16:16:43.497 +05:30 [INF] Executed action method WebApiApp.Controllers.StudentController.GetStudentByName (WebApiApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.8728ms.
+2024-04-23 16:16:43.497 +05:30 [INF] Executing OkObjectResult, writing value of type 'WebApiApp.Models.StudentDTO'.
+2024-04-23 16:16:43.497 +05:30 [INF] Executed action WebApiApp.Controllers.StudentController.GetStudentByName (WebApiApp) in 34.5795ms
+2024-04-23 16:16:43.497 +05:30 [INF] Executed endpoint 'WebApiApp.Controllers.StudentController.GetStudentByName (WebApiApp)'
+2024-04-23 16:16:43.498 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/api/Student/Test - 200 93 application/json; charset=utf-8 35.0652ms

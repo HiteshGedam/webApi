@@ -1,0 +1,40 @@
+2024-04-19 16:47:40.795 +05:30 [INF] Now listening on: https://localhost:7052
+2024-04-19 16:47:40.821 +05:30 [INF] Now listening on: http://localhost:5220
+2024-04-19 16:47:40.825 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-19 16:47:40.827 +05:30 [INF] Hosting environment: Development
+2024-04-19 16:47:40.829 +05:30 [INF] Content root path: F:\PRJ\WebApiApp
+2024-04-19 16:47:44.149 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/swagger - null null
+2024-04-19 16:47:44.427 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/swagger - 301 0 null 282.9107ms
+2024-04-19 16:47:44.468 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/swagger/index.html - null null
+2024-04-19 16:47:44.559 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/swagger/index.html - 200 null text/html;charset=utf-8 90.9409ms
+2024-04-19 16:47:44.593 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/swagger/swagger-ui.css - null null
+2024-04-19 16:47:44.596 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/swagger/swagger-ui-bundle.js - null null
+2024-04-19 16:47:44.596 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/swagger/swagger-ui-standalone-preset.js - null null
+2024-04-19 16:47:44.598 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-19 16:47:44.615 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 17.4834ms
+2024-04-19 16:47:44.648 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-04-19 16:47:44.648 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-04-19 16:47:44.654 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/swagger/swagger-ui.css - 200 143943 text/css 61.1164ms
+2024-04-19 16:47:44.654 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 58.4584ms
+2024-04-19 16:47:44.665 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/_vs/browserLink - null null
+2024-04-19 16:47:44.679 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-04-19 16:47:44.679 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 83.5493ms
+2024-04-19 16:47:44.721 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/_vs/browserLink - 200 null text/javascript; charset=UTF-8 56.9061ms
+2024-04-19 16:47:44.901 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/swagger/v1/swagger.json - null null
+2024-04-19 16:47:44.964 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/swagger/favicon-32x32.png - null null
+2024-04-19 16:47:44.965 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-04-19 16:47:44.965 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/swagger/favicon-32x32.png - 200 628 image/png 1.2945ms
+2024-04-19 16:47:45.064 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 163.4259ms
+2024-04-19 16:47:57.292 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/api/Demo - null null
+2024-04-19 16:47:57.299 +05:30 [INF] Executing endpoint 'WebApiApp.Controllers.DemoController.Index (WebApiApp)'
+2024-04-19 16:47:57.316 +05:30 [INF] Route matched with {action = "Index", controller = "Demo"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller WebApiApp.Controllers.DemoController (WebApiApp).
+2024-04-19 16:47:57.427 +05:30 [INF] Executing action method WebApiApp.Controllers.DemoController.Index (WebApiApp) - Validation state: "Valid"
+2024-04-19 16:47:57.429 +05:30 [INF] Index Method Logged
+2024-04-19 16:47:57.465 +05:30 [WRN] Index Method Logged
+2024-04-19 16:47:57.467 +05:30 [ERR] Index Method Logged
+2024-04-19 16:47:57.469 +05:30 [FTL] Critical Method Logged
+2024-04-19 16:47:57.472 +05:30 [INF] Executed action method WebApiApp.Controllers.DemoController.Index (WebApiApp), returned result Microsoft.AspNetCore.Mvc.OkResult in 41.7384ms.
+2024-04-19 16:47:57.474 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2024-04-19 16:47:57.477 +05:30 [INF] Executed action WebApiApp.Controllers.DemoController.Index (WebApiApp) in 158.6293ms
+2024-04-19 16:47:57.477 +05:30 [INF] Executed endpoint 'WebApiApp.Controllers.DemoController.Index (WebApiApp)'
+2024-04-19 16:47:57.477 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/api/Demo - 200 0 null 185.8134ms

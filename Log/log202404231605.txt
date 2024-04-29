@@ -1,0 +1,22 @@
+2024-04-23 16:05:01.443 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Address], [s].[DOB], [s].[Email], [s].[Name]
+FROM [students] AS [s]
+WHERE [s].[Id] = @__id_0
+2024-04-23 16:05:10.586 +05:30 [INF] Executed action method WebApiApp.Controllers.StudentController.GetStudentById (WebApiApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10877.731ms.
+2024-04-23 16:05:10.615 +05:30 [WRN] No output formatter was found for content types '["text/plain"]' to write the response.
+2024-04-23 16:05:10.615 +05:30 [INF] Executed action WebApiApp.Controllers.StudentController.GetStudentById (WebApiApp) in 10924.3658ms
+2024-04-23 16:05:10.616 +05:30 [INF] Executed endpoint 'WebApiApp.Controllers.StudentController.GetStudentById (WebApiApp)'
+2024-04-23 16:05:10.617 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/api/Student/1 - 406 0 null 10926.6556ms
+2024-04-23 16:05:19.910 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/api/Student/1 - null null
+2024-04-23 16:05:19.910 +05:30 [INF] Executing endpoint 'WebApiApp.Controllers.StudentController.GetStudentById (WebApiApp)'
+2024-04-23 16:05:19.910 +05:30 [INF] Route matched with {action = "GetStudentById", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[WebApiApp.Models.StudentDTO] GetStudentById(Int32) on controller WebApiApp.Controllers.StudentController (WebApiApp).
+2024-04-23 16:05:19.931 +05:30 [INF] Executing action method WebApiApp.Controllers.StudentController.GetStudentById (WebApiApp) - Validation state: "Valid"
+2024-04-23 16:05:22.558 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Address], [s].[DOB], [s].[Email], [s].[Name]
+FROM [students] AS [s]
+WHERE [s].[Id] = @__id_0
+2024-04-23 16:05:22.558 +05:30 [INF] Executed action method WebApiApp.Controllers.StudentController.GetStudentById (WebApiApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2628.5119ms.
+2024-04-23 16:05:22.561 +05:30 [WRN] No output formatter was found for content types '["text/plain"]' to write the response.
+2024-04-23 16:05:22.561 +05:30 [INF] Executed action WebApiApp.Controllers.StudentController.GetStudentById (WebApiApp) in 2651.0187ms
+2024-04-23 16:05:22.561 +05:30 [INF] Executed endpoint 'WebApiApp.Controllers.StudentController.GetStudentById (WebApiApp)'
+2024-04-23 16:05:22.561 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/api/Student/1 - 406 0 null 2651.9233ms

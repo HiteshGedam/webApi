@@ -1,0 +1,41 @@
+2024-04-23 16:06:26.577 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-23 16:06:26.615 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-23 16:06:26.617 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-23 16:06:26.618 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-23 16:06:26.630 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-04-23 16:06:26.641 +05:30 [INF] Applying migration '20240423103622_UpdateTbaleName'.
+2024-04-23 16:06:26.662 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240423103622_UpdateTbaleName', N'8.0.4');
+2024-04-23 16:06:39.924 +05:30 [INF] Now listening on: https://localhost:7052
+2024-04-23 16:06:39.951 +05:30 [INF] Now listening on: http://localhost:5220
+2024-04-23 16:06:39.955 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-23 16:06:39.956 +05:30 [INF] Hosting environment: Development
+2024-04-23 16:06:39.958 +05:30 [INF] Content root path: F:\PRJ\WebApiApp
+2024-04-23 16:06:40.366 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/swagger/index.html - null null
+2024-04-23 16:06:40.589 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/swagger/index.html - 200 null text/html;charset=utf-8 225.6217ms
+2024-04-23 16:06:40.620 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-23 16:06:40.626 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/_vs/browserLink - null null
+2024-04-23 16:06:40.628 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 8.2295ms
+2024-04-23 16:06:40.688 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/_vs/browserLink - 200 null text/javascript; charset=UTF-8 62.6002ms
+2024-04-23 16:06:40.799 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/swagger/v1/swagger.json - null null
+2024-04-23 16:06:40.928 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 129.3758ms
+2024-04-23 16:06:47.931 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/api/Student/ALL - null null
+2024-04-23 16:06:47.952 +05:30 [INF] Executing endpoint 'WebApiApp.Controllers.StudentController.GetStudent (WebApiApp)'
+2024-04-23 16:06:47.966 +05:30 [INF] Route matched with {action = "GetStudent", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[WebApiApp.Models.StudentDTO]] GetStudent() on controller WebApiApp.Controllers.StudentController (WebApiApp).
+2024-04-23 16:06:48.114 +05:30 [INF] Executing action method WebApiApp.Controllers.StudentController.GetStudent (WebApiApp) - Validation state: "Valid"
+2024-04-23 16:06:48.944 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Name], [s].[Email], [s].[Address], [s].[DOB]
+FROM [students] AS [s]
+2024-04-23 16:06:48.967 +05:30 [INF] Executed action method WebApiApp.Controllers.StudentController.GetStudent (WebApiApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 850.0823ms.
+2024-04-23 16:06:48.979 +05:30 [WRN] No output formatter was found for content types '["text/plain"]' to write the response.
+2024-04-23 16:06:48.982 +05:30 [INF] Executed action WebApiApp.Controllers.StudentController.GetStudent (WebApiApp) in 1014.1494ms
+2024-04-23 16:06:48.982 +05:30 [INF] Executed endpoint 'WebApiApp.Controllers.StudentController.GetStudent (WebApiApp)'
+2024-04-23 16:06:48.989 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/api/Student/ALL - 406 0 null 1058.9297ms

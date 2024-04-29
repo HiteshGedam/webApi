@@ -1,0 +1,85 @@
+2024-04-23 15:56:00.299 +05:30 [INF] Now listening on: https://localhost:7052
+2024-04-23 15:56:00.336 +05:30 [INF] Now listening on: http://localhost:5220
+2024-04-23 15:56:00.341 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-23 15:56:00.343 +05:30 [INF] Hosting environment: Development
+2024-04-23 15:56:00.345 +05:30 [INF] Content root path: F:\PRJ\WebApiApp
+2024-04-23 15:56:03.029 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/swagger - null null
+2024-04-23 15:56:03.284 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/swagger - 301 0 null 260.8145ms
+2024-04-23 15:56:03.311 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/swagger/index.html - null null
+2024-04-23 15:56:03.394 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/swagger/index.html - 200 null text/html;charset=utf-8 82.3872ms
+2024-04-23 15:56:03.482 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/swagger/swagger-ui.css - null null
+2024-04-23 15:56:03.482 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/swagger/swagger-ui-bundle.js - null null
+2024-04-23 15:56:03.483 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/swagger/swagger-ui-standalone-preset.js - null null
+2024-04-23 15:56:03.484 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-23 15:56:03.502 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 18.0439ms
+2024-04-23 15:56:03.527 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/_vs/browserLink - null null
+2024-04-23 15:56:03.553 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-04-23 15:56:03.553 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-04-23 15:56:03.555 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/swagger/swagger-ui.css - 200 144929 text/css 72.7913ms
+2024-04-23 15:56:03.555 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 71.9003ms
+2024-04-23 15:56:03.569 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-04-23 15:56:03.570 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 87.1243ms
+2024-04-23 15:56:03.600 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/_vs/browserLink - 200 null text/javascript; charset=UTF-8 72.8346ms
+2024-04-23 15:56:03.847 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/swagger/v1/swagger.json - null null
+2024-04-23 15:56:03.895 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/swagger/favicon-32x32.png - null null
+2024-04-23 15:56:03.896 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-04-23 15:56:03.896 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/swagger/favicon-32x32.png - 200 628 image/png 1.3088ms
+2024-04-23 15:56:04.066 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 219.1754ms
+2024-04-23 15:56:17.335 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/api/Student - null null
+2024-04-23 15:56:17.342 +05:30 [INF] Executing endpoint 'WebApiApp.Controllers.StudentController.Index (WebApiApp)'
+2024-04-23 15:56:17.357 +05:30 [INF] Route matched with {action = "Index", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller WebApiApp.Controllers.StudentController (WebApiApp).
+2024-04-23 15:56:17.748 +05:30 [INF] Executing action method WebApiApp.Controllers.StudentController.Index (WebApiApp) - Validation state: "Valid"
+2024-04-23 15:56:17.751 +05:30 [INF] Index method of student controller caled
+2024-04-23 15:56:17.754 +05:30 [INF] Executed action method WebApiApp.Controllers.StudentController.Index (WebApiApp), returned result Microsoft.AspNetCore.Mvc.OkResult in 2.2992ms.
+2024-04-23 15:56:17.757 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2024-04-23 15:56:17.760 +05:30 [INF] Executed action WebApiApp.Controllers.StudentController.Index (WebApiApp) in 399.7145ms
+2024-04-23 15:56:17.760 +05:30 [INF] Executed endpoint 'WebApiApp.Controllers.StudentController.Index (WebApiApp)'
+2024-04-23 15:56:17.761 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/api/Student - 200 0 null 427.313ms
+2024-04-23 15:56:26.383 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/api/Student/ALL - null null
+2024-04-23 15:56:26.385 +05:30 [INF] Executing endpoint 'WebApiApp.Controllers.StudentController.GetStudent (WebApiApp)'
+2024-04-23 15:56:26.387 +05:30 [INF] Route matched with {action = "GetStudent", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[WebApiApp.Models.StudentDTO]] GetStudent() on controller WebApiApp.Controllers.StudentController (WebApiApp).
+2024-04-23 15:56:26.404 +05:30 [INF] Executing action method WebApiApp.Controllers.StudentController.GetStudent (WebApiApp) - Validation state: "Valid"
+2024-04-23 15:56:27.585 +05:30 [ERR] Failed executing DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[Name], [s].[Email], [s].[Address], [s].[DOB]
+FROM [Studetn] AS [s]
+2024-04-23 15:56:27.658 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'WebApiApp.Data.CollegeDBContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Studetn'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:7dfacf63-32b6-4110-b0de-cf4995a0ab3d
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Studetn'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:7dfacf63-32b6-4110-b0de-cf4995a0ab3d
+Error Number:208,State:1,Class:16

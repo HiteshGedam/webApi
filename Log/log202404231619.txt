@@ -1,0 +1,32 @@
+2024-04-23 16:19:04.357 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7052/api/Student/Update - application/json-patch+json 121
+2024-04-23 16:19:04.359 +05:30 [INF] Executing endpoint 'WebApiApp.Controllers.StudentController.UpdateStudent (WebApiApp)'
+2024-04-23 16:19:04.359 +05:30 [INF] Route matched with {action = "UpdateStudent", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult UpdateStudent(WebApiApp.Models.StudentDTO) on controller WebApiApp.Controllers.StudentController (WebApiApp).
+2024-04-23 16:19:04.393 +05:30 [INF] Executing action method WebApiApp.Controllers.StudentController.UpdateStudent (WebApiApp) - Validation state: "Valid"
+2024-04-23 16:19:04.397 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__value_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Address], [s].[DOB], [s].[Email], [s].[Name]
+FROM [students] AS [s]
+WHERE [s].[Id] = @__value_Id_0
+2024-04-23 16:19:04.397 +05:30 [INF] Executed action method WebApiApp.Controllers.StudentController.UpdateStudent (WebApiApp), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 3.611ms.
+2024-04-23 16:19:04.397 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-04-23 16:19:04.398 +05:30 [INF] Executed action WebApiApp.Controllers.StudentController.UpdateStudent (WebApiApp) in 39.0435ms
+2024-04-23 16:19:04.398 +05:30 [INF] Executed endpoint 'WebApiApp.Controllers.StudentController.UpdateStudent (WebApiApp)'
+2024-04-23 16:19:04.398 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7052/api/Student/Update - 404 162 application/problem+json; charset=utf-8 41.7502ms
+2024-04-23 16:19:17.444 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7052/api/Student/Update - application/json-patch+json 121
+2024-04-23 16:19:17.444 +05:30 [INF] Executing endpoint 'WebApiApp.Controllers.StudentController.UpdateStudent (WebApiApp)'
+2024-04-23 16:19:17.444 +05:30 [INF] Route matched with {action = "UpdateStudent", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult UpdateStudent(WebApiApp.Models.StudentDTO) on controller WebApiApp.Controllers.StudentController (WebApiApp).
+2024-04-23 16:19:17.461 +05:30 [INF] Executing action method WebApiApp.Controllers.StudentController.UpdateStudent (WebApiApp) - Validation state: "Valid"
+2024-04-23 16:19:17.466 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__value_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Address], [s].[DOB], [s].[Email], [s].[Name]
+FROM [students] AS [s]
+WHERE [s].[Id] = @__value_Id_0
+2024-04-23 16:19:17.476 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (Size = 500), @p1='?' (DbType = DateTime2), @p2='?' (Size = 250), @p3='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [students] SET [Address] = @p0, [DOB] = @p1, [Email] = @p2, [Name] = @p3
+OUTPUT 1
+WHERE [Id] = @p4;
+2024-04-23 16:19:17.476 +05:30 [INF] Executed action method WebApiApp.Controllers.StudentController.UpdateStudent (WebApiApp), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 14.7601ms.
+2024-04-23 16:19:17.478 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-04-23 16:19:17.478 +05:30 [INF] Executed action WebApiApp.Controllers.StudentController.UpdateStudent (WebApiApp) in 33.9103ms
+2024-04-23 16:19:17.478 +05:30 [INF] Executed endpoint 'WebApiApp.Controllers.StudentController.UpdateStudent (WebApiApp)'
+2024-04-23 16:19:17.479 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7052/api/Student/Update - 204 null null 34.4152ms

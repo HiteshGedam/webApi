@@ -1,0 +1,10 @@
+2024-04-19 16:48:35.018 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/api/Student - null null
+2024-04-19 16:48:35.029 +05:30 [INF] Executing endpoint 'WebApiApp.Controllers.StudentController.Index (WebApiApp)'
+2024-04-19 16:48:35.030 +05:30 [INF] Route matched with {action = "Index", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller WebApiApp.Controllers.StudentController (WebApiApp).
+2024-04-19 16:48:35.044 +05:30 [INF] Executing action method WebApiApp.Controllers.StudentController.Index (WebApiApp) - Validation state: "Valid"
+2024-04-19 16:48:35.046 +05:30 [INF] Index method of student controller caled
+2024-04-19 16:48:35.046 +05:30 [INF] Executed action method WebApiApp.Controllers.StudentController.Index (WebApiApp), returned result Microsoft.AspNetCore.Mvc.OkResult in 1.6229ms.
+2024-04-19 16:48:35.046 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2024-04-19 16:48:35.046 +05:30 [INF] Executed action WebApiApp.Controllers.StudentController.Index (WebApiApp) in 16.0061ms
+2024-04-19 16:48:35.046 +05:30 [INF] Executed endpoint 'WebApiApp.Controllers.StudentController.Index (WebApiApp)'
+2024-04-19 16:48:35.046 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/api/Student - 200 0 null 28.6448ms

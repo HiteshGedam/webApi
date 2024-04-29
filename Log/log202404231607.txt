@@ -1,0 +1,37 @@
+2024-04-23 16:07:02.584 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/api/Student/1 - null null
+2024-04-23 16:07:02.593 +05:30 [INF] Executing endpoint 'WebApiApp.Controllers.StudentController.GetStudentById (WebApiApp)'
+2024-04-23 16:07:02.600 +05:30 [INF] Route matched with {action = "GetStudentById", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[WebApiApp.Models.StudentDTO] GetStudentById(Int32) on controller WebApiApp.Controllers.StudentController (WebApiApp).
+2024-04-23 16:07:02.627 +05:30 [INF] Executing action method WebApiApp.Controllers.StudentController.GetStudentById (WebApiApp) - Validation state: "Valid"
+2024-04-23 16:07:02.702 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Address], [s].[DOB], [s].[Email], [s].[Name]
+FROM [students] AS [s]
+WHERE [s].[Id] = @__id_0
+2024-04-23 16:07:02.727 +05:30 [INF] Executed action method WebApiApp.Controllers.StudentController.GetStudentById (WebApiApp), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 100.7479ms.
+2024-04-23 16:07:02.730 +05:30 [WRN] No output formatter was found for content types '["text/plain"]' to write the response.
+2024-04-23 16:07:02.730 +05:30 [INF] Executed action WebApiApp.Controllers.StudentController.GetStudentById (WebApiApp) in 130.0288ms
+2024-04-23 16:07:02.730 +05:30 [INF] Executed endpoint 'WebApiApp.Controllers.StudentController.GetStudentById (WebApiApp)'
+2024-04-23 16:07:02.730 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/api/Student/1 - 406 0 null 146.3905ms
+2024-04-23 16:07:18.017 +05:30 [INF] Now listening on: https://localhost:7052
+2024-04-23 16:07:18.044 +05:30 [INF] Now listening on: http://localhost:5220
+2024-04-23 16:07:18.047 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-23 16:07:18.048 +05:30 [INF] Hosting environment: Development
+2024-04-23 16:07:18.049 +05:30 [INF] Content root path: F:\PRJ\WebApiApp
+2024-04-23 16:07:20.888 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/swagger/index.html - null null
+2024-04-23 16:07:21.066 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/swagger/index.html - 200 null text/html;charset=utf-8 178.4731ms
+2024-04-23 16:07:21.089 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-23 16:07:21.094 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/_framework/aspnetcore-browser-refresh.js - 200 13754 application/javascript; charset=utf-8 4.7035ms
+2024-04-23 16:07:21.109 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/_vs/browserLink - null null
+2024-04-23 16:07:21.142 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.1768ms
+2024-04-23 16:07:21.314 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/swagger/v1/swagger.json - null null
+2024-04-23 16:07:21.466 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 152.3658ms
+2024-04-23 16:07:29.796 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7052/api/Student/1 - null null
+2024-04-23 16:07:29.813 +05:30 [INF] Executing endpoint 'WebApiApp.Controllers.StudentController.GetStudentById (WebApiApp)'
+2024-04-23 16:07:29.836 +05:30 [INF] Route matched with {action = "GetStudentById", controller = "Student"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[WebApiApp.Models.StudentDTO] GetStudentById(Int32) on controller WebApiApp.Controllers.StudentController (WebApiApp).
+2024-04-23 16:07:30.824 +05:30 [INF] Executed DbCommand (28ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[Address], [s].[DOB], [s].[Email], [s].[Name]
+FROM [students] AS [s]
+WHERE [s].[Id] = @__id_0
+2024-04-23 16:07:30.873 +05:30 [WRN] No output formatter was found for content types '["text/plain"]' to write the response.
+2024-04-23 16:07:30.876 +05:30 [INF] Executed action WebApiApp.Controllers.StudentController.GetStudentById (WebApiApp) in 1036.6129ms
+2024-04-23 16:07:30.876 +05:30 [INF] Executed endpoint 'WebApiApp.Controllers.StudentController.GetStudentById (WebApiApp)'
+2024-04-23 16:07:30.882 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7052/api/Student/1 - 406 0 null 1086.1216ms
